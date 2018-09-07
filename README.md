@@ -11,10 +11,10 @@ Default settings:
 ```javascript
   "config": {
     "app_name": "api",             //需要拉取监控数据的 APP 名称
-    "app_group": "book",           //consul 服务分组 
+    "app_group": "book",           //consul 服务分组
     "port": 3000,                  //http服务默认端口，提供 /metrics 和 /online 接口
-    "reigster_disabled": false,    //是否禁止服务注册到 consul
-    "consul_host": "127.0.0.1",    
+    "register_disabled": true,    //是否禁止服务注册到 consul
+    "consul_host": "127.0.0.1",
     "consul_port": "8500",
     "register_mode": "cluster"            // default:cluster   other: worker
   }

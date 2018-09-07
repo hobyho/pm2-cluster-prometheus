@@ -1,24 +1,24 @@
 {
   "name": "pm2-cluster-prometheus",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Aggregate node.js workers' metrics when use pm2 cluster mode",
   "main": "app.js",
   "dependencies": {
     "address": "^1.0.3",
-    "consul": "^0.30.0",
-    "pm2": "^2.10.2",
-    "pmx": "beta",
-    "prom-client": "11.0.0"
+    "consul": "^0.34.0",
+    "pm2": "^3.0.4",
+    "pmx": "^1.6.7",
+    "prom-client": "^11.1.1"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/redar9/pm2-cluster-prometheus.git"
   },
   "config": {
-    "app_name": "api,charge",
-    "port": 3000,
-    "reigster_disabled": false,
-    "consul_service_name": "gleeman-api",
+    "app_name": "index",
+    "port": 4000,
+    "register_disabled": true,
+    "consul_service_name": "index-api",
     "consul_host": "127.0.0.1",
     "consul_port": "8500",
     "register_mode": "cluster"
